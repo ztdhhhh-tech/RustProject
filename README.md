@@ -49,16 +49,3 @@ assets/
   player.png       # 玩家贴图（像素风格）
 Cargo.toml         # Rust 包配置，依赖 macroquad 0.4
 ```
-
-## 开发提示
-- 使用 `cargo fmt` 与 `cargo clippy` 保持代码风格统一、提前捕捉潜在问题。
-- 需要录制或截图时，可在 `render::draw_world` 中调整 UI 或视觉参数。
-- 如需新增资产，确保路径位于 `assets/` 下并在 `main.rs` 或相关模块中加载。
-
-## 发行建议
-1. 使用 `cargo run --release` 进行最终测试，确保性能与逻辑稳定。
-2. 如果需要打包可执行文件，可执行 `cargo build --release`，产物位于 `target/release/`。
-3. Windows 下可将 `assets/` 目录与可执行文件放在同一目录打包发布。
-
-## 许可证
-当前尚未声明许可证，发布前请根据实际需求追加 `LICENSE` 文件。
